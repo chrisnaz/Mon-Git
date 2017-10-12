@@ -7,10 +7,11 @@ int main (int agrc, char *argc[]){
 	scanf ("%d", &a);
 	printf("Entrez le deuxième nombre : ");
 	scanf ("%d", &b);
-	
-	int r = 0;
+	 
+	//Création de la boucle qui calcul le PGCD
+	int r = 0; //Another variable
 	while (b != 0){
-		r = a % b;
+		r = a % b; 
 		a = b;
 		b = r;
 	}
