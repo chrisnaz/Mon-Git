@@ -2,26 +2,20 @@
 #include <stdlib.h>
 
 int main (int agrc, char *argc[]){
-	int n, i, x;
+	int n, i;
 	printf("Entrez votre nombre : ");
 	scanf("%d", &n);
 	
+	//Start of the loop to check if the number is odd
+	//And calculate the sum
 	int s = 0;
-	/*i = 0; 
-	while (i <= n){
-		x = 2%i - 1;
-		s = s + x;
-		i++;
-	}*/
 	for (i = 0; i <= n; ++i){
-		if (x % 2 == 1){
-			x = 2*i + 1;
-			s = s + x;
+		if (i % 2 == 1){ //Check the odd number
+			s = s + i; // make the sum
+			printf("%d ",i); //Show the number
 		}
-		/*printf("%d",x);
-		s = s + x;*/
 	} 
 	printf("\n");
-	printf("%d\n",s);
+	printf("Leur somme vaut %d\n",s); //Show the sum
 	return 0;
 }
