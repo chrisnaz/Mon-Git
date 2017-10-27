@@ -1,11 +1,9 @@
 typedef struct element element;
 struct element{
-	char mot [20];
-	char definition [2000];
-	struct element * courant;
-	struct element * next;
-	
-	//struct element * liste;
+  char mot [20];
+  char definition [2000];
+  struct element * courant;
+  struct element * next;
 };
 typedef element * liste;
 
@@ -17,4 +15,3 @@ liste deleteTail (liste);
 liste searhElement (liste, char []);
 void showList (liste);
 int nbrElement (liste);
-

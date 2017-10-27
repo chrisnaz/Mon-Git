@@ -3,13 +3,13 @@ CC = gcc
 all: Programme
 
 Programme: listChaine.o main.o
-	$(CC) main.o listChaine.o -o Programme
+	$(CC) -g main.o listChaine.o -o Programme
 
 main.o: main.c
-	$(CC) -c main.c
+	$(CC) -c -g main.c
 
 listChaine.o: listChaine.c
-	$(CC) -c listChaine.c
+	$(CC) -c -g listChaine.c
 
 clear:
 	@rm *.o main
