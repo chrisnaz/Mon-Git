@@ -132,32 +132,3 @@ int main(int argc, char ** argv){
   }
   return 0;
 }
-	
-	/*liste elem_un = NULL ;
-	liste elem_deux = NULL;
-	//char 
-	
-	{
-		elem_un = addElemAtBegining (elem_un, "Parent", "One of two persons from whom one is immediately biologically descended, a mother or father.");
-		elem_un = addElemAtEnd (elem_un, "Child", "A person who has not yet reached adulthood, whether natural (puberty), cultural (initiation).");
-		elem_un = addElemAtEnd (elem_un, "Piece", "A part of a larger whole, usually in such a from that it is able to be separated from other parts.");
-		elem_un = addElemAtEnd (elem_un, "Cake", "A rich, sweet dessert fodd, typically made of flour, sugar and agges and baked in a oven, and often covered in icing.");
-		elem_un = addElemAtEnd (elem_un, "Food", "Any substance that can be consumed by living organisms, especially by eating, in order to sustain life.");
-		elem_un = addElemAtEnd (elem_un, "Yes", "A word used to show agreement or acceptance.");
-		elem_un = addElemAtEnd (elem_un, "Christian", "An individual who seeks to live his or her life according to the principes and values taught by Jesus-Christ.");
-		
-		elem_un = addElemAtBegining (elem_un, "Thank", "(Obsolete) An expression of appreciation; a thought.");
-		elem_un = addElemWithIndex (elem_un, "Mafemme", "est une bonne personne pour moi", 3);
-			
-		//elem_un = deleteHead (elem_un);
-		//elem_un = deleteTail (elem_un);
-		//showList (elem_un);
-		//printf("\n");
-		//printf("L'élément cherché est : \n");
-		//elem_deux = searhElement (elem_un, "Food");
-		//elem_deux = addElemAtBegining (elem_deux, "Food", "sdlfsdkjf");
-		//showList (elem_deux);
-		
-	
-	return 0;
-}*/
