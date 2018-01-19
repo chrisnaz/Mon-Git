@@ -4,7 +4,20 @@
 #include <stdio.h>
 #include <errno.h>
 
-int main (){
+void fils(){
+  printf("\n");
+  printf("Nous sommes dans le fils\n"
+    "Voici son pid : %d.\n"
+    "Son PPID est : %d.\n", (int) getpid(), (int) getppid());
+}
+
+void pere (int child){
+  printf("Nous sommes dans le père\n"
+    "Son PID est : %d.\n"
+    "Et son PPID est : %d.\n", (int) getpid(), (int) getppid());
+}
+
+int main (int argc, char ** argv){
   pid_t pid;
   pid = fork();
 
@@ -15,13 +28,11 @@ int main (){
       break;
   
     case 0:
-      printf("\n");
-      printf ("Je suis le fils et mon pid est %d et le ppid est %d\n", (int)getpid(), (int)getppid());
+      fils();
       break;
 
     case 1:
-      printf("\n");
-      printf ("Je suis le père et mon pid est %d et le pid du fil est %d", (int)getpid(), (int)getppid());
+      pere(pid);
       break;
   }
   return 0;
